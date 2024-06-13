@@ -18,3 +18,7 @@ Estensioni utili:
 </ul>
 
 Disattivate PHP Language Features che è la ext. built in di VS Code che fa schifo
+
+Se volete usare il cmd di finestra ricordate di mettela come var ambientale il percorso in cui avete installato php es:
+
+```C:\laragon\bin\php\php-8.3.8-nts-Win32-vs16-x64```
