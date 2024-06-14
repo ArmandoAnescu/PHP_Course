@@ -5,5 +5,8 @@ echo PI.PHP_EOL;
 //pi=1.78; non puoi sovrasciverla ti segna errore
 const Provincie=['TO','RE'];
 //Provincie[2]='RO'; NON SI PUO' NEMMNEO CAMBIARE UN VALORE
+//define('REGIONS',['PIE'.'LOM']);
+const REGIONS=['PIE'.'LOM'];
 if(!defined('PI'))//se non è stata definita una const con nome PI allora definiscila
 define('PI',3.141);
+//per convezione è meglio scrivere le nomi dlle costanti in MAIUSC
