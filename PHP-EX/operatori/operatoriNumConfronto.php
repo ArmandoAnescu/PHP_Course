@@ -38,8 +38,17 @@ Ritorna 0 se a e b sono uguali
 Ritorna 1 se a>b
 Ritorna -1 se a è < di b
 $a ?? $b ?? $c  ?? $d ritorna il primo valore che non è null
-
+(condizione)? valore1:valore2
+ATTENZIONE: 2**3**2 NON è (2^3)^2 MA 3^2=9 e poi 2^9
 */
 $ar=['name'=>'BB','city'=>'Turkmenia','lastname'=>null];
-$ar['lastname']??='N/A';//se null metti N/A
+$lastName=$ar['lastname']??='N/A';//se null metti N/A
 echo $ar['lastname'];
+echo $lastName;
+$val1=null;
+$val2=null;
+$result=$val1??$val2??3;
+var_dump($result);
+$ternary=($val1===$val2)?"sono uguale":"sono diversi";
+echo '<br>'.$ternary;
+//per espressioni semplici è meglio utlizzare il ternario per operazioni più difficili è meglio l'if l'else e l'else if
