@@ -23,4 +23,4 @@ Se volete usare il cmd di finestra ricordate di metterla come var ambientale il 
 
 ```C:\laragon\bin\php\php-8.3.8-nts-Win32-vs16-x64```
 
-RICORDA: il tag PHP NON VA CHIUSO SE DOPO NON NON METTI CODICE HTML e il ; va sempre dopo ogni funzione  var creta. Le variabili devono essere dichiarate e usate con il $ davanti
+RICORDA: il tag PHP NON VA CHIUSO SE DOPO NON METTI CODICE HTML e il ; va sempre dopo ogni funzione  var creta. Le variabili devono essere dichiarate e usate con il $ davanti
