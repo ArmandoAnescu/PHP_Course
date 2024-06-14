@@ -40,3 +40,26 @@ for($i=0;$i<=10;$i++){
     }
     echo '<br>';
 }
+?><!-- commento -->
+<h1>
+<?php
+$arr=['red','blue','green','yellow','pink','purple','black'];
+$arr2=['rosso'=>'red','blue'=>'blue','green','yellow','pink','purple','black'];
+$arr3[]=['A','B','C'];
+$arr3[]=['1','2','3'];
+foreach($arr as $value){
+    echo "$value <br>";
+}
+foreach($arr2 as $key=>&$value){//con & passo value per ref
+    $value=strtoupper($value);
+    echo "$key -> $value <br>";
+}
+unset($value);//per evitare che qualcuno modifichi il valore essendo passata per ref
+//var_dump($arr2);
+foreach($arr3 as $value){
+    foreach($value as $val){
+        echo "$val <br>";
+    }
+}
+?>
+</h1>
