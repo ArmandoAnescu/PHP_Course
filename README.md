@@ -19,8 +19,19 @@ Estensioni utili:
 
 Disattivate PHP Language Features che è la ext. built in di VS Code che fa schifo
 
-Se volete usare il cmd di finestra ricordate di metterla come var ambientale il percorso in cui avete installato php es:
+Se volete usare il cmd di finestra ricordate di mettere php come var ambientale usando percorso in cui avete installato php
+
+-basta che cercate:"Modifiche le varibili ambientali relaive .."
+
+-cliccate variabili d'ambiente
+
+-nella finestra che si apre su variabili dell'utente per stage
+ e poi cliccate su path e poi modifica
+
+ -da li cliccate su nuovo copiate il percorso dove avete salvato il percorso es:
 
 ```C:\laragon\bin\php\php-8.3.8-nts-Win32-vs16-x64```
+
+-cliccate ok e poi controllate usanod il cmd e controllando la versione di php come detto sopra
 
 RICORDA: il tag PHP NON VA CHIUSO SE DOPO NON METTI CODICE HTML e il ';' va sempre dopo ogni funzione  var creta. Le variabili devono essere dichiarate e usate con il $ davanti
