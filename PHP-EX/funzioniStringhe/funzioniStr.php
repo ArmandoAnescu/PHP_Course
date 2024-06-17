@@ -9,8 +9,16 @@ strpos la pos di un char
 implode unisce gli elementi degli array e se vuoi puoi mettere
 un simbolo tra ogni elemnto
 explode dato un char suddivide una stringa in un array
-join
+join uguale a implode
+stripslashes se nel DB(data base) salvi i dati con \ alla fine inizio puoi rimuoverli
+per una stampa pulita
+str_contains controlla se un char o una parola sono contenute in una stringa
+se c'è ritorna true altriemnti false(key sensitive)
+starts_with controlla che la stringa inizia con un char o parola(key sensitive)
+ends_with controlla che la stringa finiscaa con un char o parola(key sensitive)
+stripos ritorna la pos della lettara ed key insensitive
 */
+
 $lastName='Griffin';
 $firstName='Peter';
 $email='PETER.GRIFFIN@GMAIL.COM';
@@ -39,5 +47,13 @@ $arr=explode(',',$str);
 $sayHi=['H','e','l','l','o'];
 echo implode("-",$sayHi).'<br>';
 echo join("",$sayHi).'<br>';
+$carName="Doblo\'";
+$carName=stripslashes($carName);
+echo $carName.'<br>';
+$str='Adoro le ragazze gotiche';
+echo var_dump(str_contains(haystack:$str,needle:'gotiche')).'<br>';
+if(str_starts_with($str,'Adoro')){
+    echo "La stringa inizia con A";
+}
 ?>
 </h1>
