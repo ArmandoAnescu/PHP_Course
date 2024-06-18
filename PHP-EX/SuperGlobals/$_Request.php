@@ -38,7 +38,7 @@ echo '<br>';
             </div>
             <div class="form-group">
                 <button class="btn btn-success">SAVE</button>
-                <input type="reset" onclick="location.href=$_REQUEST.php" class="btn btn-success" value="RESET"/>
+                <input type="reset" onclick="location.href='$_REQUEST.php'" class="btn btn-success" value="RESET"/>
                 <a class="btn btn-danger" href="$_Request.php?name=test&lastname=TestLastname">Invia test</a>
             </div>
         </form>
