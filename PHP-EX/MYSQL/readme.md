@@ -8,7 +8,13 @@ Per creare la tabella usando HeidiSQL:
 <li>A sinistra dove vedi click destro e fai new table </li>
 <li>Da quello che ti si apre dagli un nome e aggiungi le colonne con i loro nomi,tipo ecc</li>
 <li>Clicca su salva</li>
-<li>Poi per vedere i dati che inseirto basta</li>
+<li>Poi per vedere i dati che inserito basta</li>
 </ul>
 
 ``` SELECT * from nomeDB;```
+<hr>
+
+# Comandi CMD:
+
+comando per vedere DB: ```show databases;``` <br>
+comando per creare DB: ```create database nome;``` <br>
