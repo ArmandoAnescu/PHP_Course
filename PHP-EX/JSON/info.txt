@@ -1,0 +1,16 @@
+javascript object notation
+modo d scambiare i dati
+faacile dainterpretare
+closs platform
+i dati rappresentati con chiave:valore
+i vari dati separati da ,
+le graffe "{}" rappresentano gli oggetti
+le parentesi quadre "[]" rappresentano gli array
+TIPI DI DATI:
+- string
+- number
+- boolean
+- array
+- object(JSON object)
+-null
+Le stringhe vanno messe tra virgolette:{"name":"John"}
