@@ -16,5 +16,14 @@ Per creare la tabella usando HeidiSQL:
 
 # Comandi CMD:
 
+comando per accedere: ```mysql -uroot -p``` <br>
+(se non hai configurato una pass premi invio altriemnti inserisci la pass)<br>
 comando per vedere DB: ```show databases;``` <br>
 comando per creare DB: ```create database nome;``` <br>
+comando per scegliere DB: ```use nomeDB;``` <br>
+comando per creare una tabella: ```create table nomeTab (nomecolonna tipo (grandezza max) altri valor ,altre colonne se vuoi);``` <br>
+puoi creare quante colonne vuoi in un solo comando basta chiudere tutte le parentesi e poi mettere ';' <br>
+per vedere le tablle/a: ```show tables;``` <br>
+per vedere contenuto tablle/a: ```describe nometabella;``` <br>
+
+
