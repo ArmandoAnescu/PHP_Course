@@ -34,4 +34,5 @@ Se volete usare il cmd di finestra ricordate di mettere php come var ambientale 
 
 -cliccate ok e poi controllate usanod il cmd e controllando la versione di php come detto sopra
 
-RICORDA: il tag PHP NON VA CHIUSO SE DOPO NON METTI CODICE HTML e il ';' va sempre dopo ogni var,funzione usata o funzione variabile creata. Le variabili devono essere dichiarate e usate con il $ davanti tranne le costanti.
+RICORDA: il tag PHP NON VA CHIUSO SE DOPO NON METTI CODICE HTML e il ';' va sempre dopo ogni var,funzione usata o funzione variabile creata. Le variabili devono essere dichiarate e usate con il $ davanti tranne le costanti. <br>
+Puoi usare il cmd di laragon/xampp o quello di finestra se imposti maria db come var ambientale per usare MYSQL o usare HeidiSQL o PHPMyAdmin con l'interfaccia grafica
