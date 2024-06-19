@@ -1,4 +1,4 @@
-#Istruzioni MYSQL
+# Istruzioni MYSQL
 Vai su maria DB o dove vuoi e scarica l'ultima ver. di MYSQL
 puoi usare HeidiSQL per creare il tuo test database dove puoi inseire varie colonne con i  tuoi dati
 Per creare tabella usando HeidiSQL:
@@ -8,5 +8,6 @@ Per creare tabella usando HeidiSQL:
 <li>Da quello che ti si apre dagli un nome e aggiungi le colonne con i loro nomi,tipo ecc</li>
 <li>Clicca su salva</li>
 <li>Poi per vedere i dati che inseirto basta</li>
-<li>``` SELECT * from nomeDB;```</li>
 </ul>
+
+``` SELECT * from nomeDB;```
