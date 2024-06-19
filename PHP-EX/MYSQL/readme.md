@@ -25,5 +25,10 @@ comando per creare una tabella: ```create table nomeTab (nomecolonna tipo (grand
 puoi creare quante colonne vuoi in un solo comando basta chiudere tutte le parentesi e poi mettere ';' <br>
 per vedere le tablle/a: ```show tables;``` <br>
 per vedere contenuto tablle/a: ```describe nometabella;``` <br>
+Primary key: la chiave univoca di ogni elemento per riconoscerli in una tabella.<br>
+per aggiungere valori: ```ALTER TABLE nomeTab ADD campo valori;``` <br>
+per creare un id ad incremento automatico: ```ALTER TABLE nomeTab ADD campo INT (val) UNSIGNED NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (id);``` <br>
+<hr>
+
 
 
