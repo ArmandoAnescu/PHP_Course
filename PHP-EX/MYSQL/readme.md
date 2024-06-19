@@ -28,6 +28,11 @@ per vedere contenuto tablle/a: ```describe nometabella;``` <br>
 Primary key: la chiave univoca di ogni elemento per riconoscerli in una tabella.<br>
 per aggiungere valori: ```ALTER TABLE nomeTab ADD campo valori;``` <br>
 per creare un id ad incremento automatico: ```ALTER TABLE nomeTab ADD campo INT (val) UNSIGNED NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (id);``` <br>
+come indicizzare un valore(non univoco):```CREATE INDEX IDX_NOME on nometab (campo(numeroCampi));```<br>
+per rimuovere un indice:```ALTER TABLE NOMETab DROP index IDX_NOMEINDEX;```<br>
+come indicizzare in modo univoco: ```CREATE UNIQUE INDEX IDX_NOME on nometab (campo(quanto vuoi indicizzare));```<br>
+come inserire dati: ``` INSERT into nomeTab (nomeCampo1,...) values(valCampo1,...);```<br>
+per vedere i dati: ```SELECT * FROM table_name ```<br>
 <hr>
 
 
