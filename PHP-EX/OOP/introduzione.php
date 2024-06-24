@@ -16,19 +16,19 @@ class Auto{
         return $this->color;
     }
     public function setColor(string $color){
-        if(strlen($color)>3){
+        if(strlen($color)<3){
             throw new Exception('Colore invalido');
             //lancio un eccezione
         }
         $this->color=$color;
-    }
+    }  
 }
 /*
 public=l'attributo/metodo può essere chiamato ovunque
 (no incapsulamento)
 private=l'attributo/metodo può essere chiamato solo da se stesso o dalle classi che ereditano
 */
-$auto=new Auto('Red','blue');
+$auto=new Auto('Redd','blue');
 $auto2=new Auto;
 $auto2->setColor('Azure');
 echo $auto->getColor().'<br>';
