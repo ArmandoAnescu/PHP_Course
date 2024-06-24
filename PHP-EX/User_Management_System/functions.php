@@ -1,6 +1,10 @@
 <?php
 
 require_once 'connection.php';
+function getConfig($param,$default=''){
+    $config = require 'config.php';
+    return $config[$param]??$default;
+}
 /*
 funzione per generare utenti random
 */
@@ -92,6 +96,66 @@ function insertRandUser($totale,mysqli $mysqli){
         }
     }
 }
-insertRandUser(30,$mysqli);
+function getUsers(array $params=[]){
+    $records=[];//prendo gli user
 
+    $conn=$GLOBALS['mysqli'];
+    
+    $limit=$params['recordsPerPage']??10;
+    $orderBy=$params['orderBy']??'id';
+    $orderDir=array_key_exists('orderDir',$params)? $params['orderDir']:'ASC';
+    $search=$params['search']??'';
+    $currentPage=$params['currentPage']??0;
+    if($currentPage!==1){
+        $start=($limit*($currentPage-1));
+    }else{
+        $start=0;
+    }
+    
+    if($orderDir !== 'ASC' && $orderDir !=='DESC'){
+        $orderDir='ASC';
+    }
+    $sql= "SELECT * FROM users";
+    if($search){
+        $sql.=" WHERE ";
+        if(is_numeric($search)){
+            $sql.="(id=$search OR age=$search) ";
+        }else{
+            $sql.="(fiscalcode like '%$search%' OR username like '%$search%' OR  email like '%$search%')";
+        }
+    }
+    $sql.= " ORDER BY $orderBy $orderDir LIMIT $start,$limit";
+    $res=$conn->query($sql);
+    if($res){
+        while($row=$res->fetch_assoc()){//prendo tutti gli user
+            $records[]=$row;
+        }
+    }
+    return $records;
+}
+function getParam($param,$default=''){
+    return $_REQUEST[$param]?? $default;//se non ce niente gli do un risultato di default
+}
+function getTotalUsersCount(string $search='  '):int {
+ 
+    $conn=$GLOBALS['mysqli'];
+    $sql= "SELECT COUNT(*) as total FROM users";
+    
+    if($search){
+        $sql.=" WHERE ";
 
+        if(is_numeric($search)){
+            $sql.="(id=$search OR age=$search) ";
+        }else{
+            $search=$conn->real_escape_string($search);
+            $sql.="fiscalcode like '%$search%' OR username like '%$search%' OR  email like '%$search%'";
+        }
+    }
+    // $sql.= " ORDER BY $orderBy $orderDir LIMIT 0,$limit";
+    // var_dump($sql);
+    $res=$conn->query($sql);
+    if($res && $row=$res->fetch_assoc()){
+        return (int) $row['total'];
+    }
+    return 0;
+}
